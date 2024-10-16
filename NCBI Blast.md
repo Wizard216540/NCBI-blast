@@ -129,6 +129,16 @@ conda activate blast
 
 `python pigmicrobiota_blast.py`
 
+`blastn -db /storage_1/KF07453/ncbi-blast-2.16.0+/16S_ribosomal_RNA -query {file} -evalue 1e-50 -out {output_file} -outfmt '7 qseqid sscinames sseqid sgi sacc evalue bitscore' -max_target_seqs 5 -num_threads 6`
+
+-db: 比對的資料庫位置
+-query: 要進行比對的fasta檔案
+-evalue: 統計學上的期望值，估計在隨機序列中出現相同或更好的比對的機率(在隨機數據庫搜索中，預期會出現多少個相同得分或更好的序列比對)，e值越低結果越準確
+-out: 輸出的檔案
+-outfmt: 輸出檔案的格式
+-max_target_seqs:最多比對到的序列
+-num_threads: 使用的cpu數量
+
 ![圖片1](https://hackmd.io/_uploads/BkxXkwsJkx.png)
 
 
