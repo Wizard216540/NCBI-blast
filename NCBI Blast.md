@@ -92,10 +92,10 @@ blastp: 2.16.0+
 **5. 本機端資料庫下載**
 下載資料庫後即可使用
 
-`wget -c https://ftp.ncbi.nlm.nih.gov/blast/db/FASTA/nt.gz
-tar -xzvf 16S_ribosomal_RNA.tar.gz
-wget ftp://ftp.ncbi.nlm.nih.gov/blast/db/taxdb.tar.gz
-tar -zxvf taxdb.tar.gz
+`wget -c https://ftp.ncbi.nlm.nih.gov/blast/db/FASTA/nt.gz  
+tar -xzvf 16S_ribosomal_RNA.tar.gz  
+wget ftp://ftp.ncbi.nlm.nih.gov/blast/db/taxdb.tar.gz  
+tar -zxvf taxdb.tar.gz  
 `
 
 # NCBI Blast比對
