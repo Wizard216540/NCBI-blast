@@ -112,12 +112,13 @@ cd seqtk; make
 echo 'export PATH=$PATH:/storage_1/KF07453/ncbi-blast-2.16.0+/seqtk/' >> ~/.bashrc
 source ~/.bashrc
 conda activate blast
+cd ../
 ```
 ![messageImage_1728954884722](https://hackmd.io/_uploads/rJjGfHjyyx.jpg)
 
 
 
-**2. fasta格式轉換**
+**2. fasta格式轉換**  
 `seqtk seq -a ./xxx.fastq.gz > ./xxx.fasta`  
 修改test.sh中的路徑並執行後，即可輸出.fasta格式  
 ![messageImage_1728958994412](https://hackmd.io/_uploads/r1nLG8iJ1l.jpg)
