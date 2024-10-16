@@ -90,7 +90,8 @@ blastp: 2.16.0+
 
 
 **5. 本機端資料庫下載**
-資料庫下載後即可使用
+下載資料庫後即可使用
+
 `wget -c https://ftp.ncbi.nlm.nih.gov/blast/db/FASTA/nt.gz
 `
 `tar -xzvf 16S_ribosomal_RNA.tar.gz`
