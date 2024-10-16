@@ -37,7 +37,7 @@ python==3.8: 指定env中python的版本
 
 ##### To activate this environment, use
 #### #
-#####     $ conda activate HMP_NGS
+#####     $ conda activate blast
 #### #
 ##### To deactivate an active environment, use
 #### #
@@ -115,15 +115,15 @@ conda activate blast
 
 
 **2. fasta格式轉換**
-`seqtk seq -a ./xxx.fastq.gz > ./xxx.fasta`
-修改test.sh中的路徑並執行後，即可輸出.fasta格式
+`seqtk seq -a ./xxx.fastq.gz > ./xxx.fasta`  
+修改test.sh中的路徑並執行後，即可輸出.fasta格式  
 ![messageImage_1728958994412](https://hackmd.io/_uploads/r1nLG8iJ1l.jpg)
 
 
 **3. 使用NCBI 16S_rRNA 資料庫進行序列之比對**
-修改pigmicrobiota_blast.py中的路徑後執行，與先前下載好的16S_rRNA資料庫進行比對
-一個樣本比對約需50分鐘，建議使用nohup
-最後會輸出比對結果之txt檔案
+修改pigmicrobiota_blast.py中的路徑後執行，與先前下載好的16S_rRNA資料庫進行比對  
+一個樣本比對約需50分鐘，建議使用nohup  
+最後會輸出比對結果之txt檔案  
 
 `python pigmicrobiota_blast.py`
 
@@ -141,10 +141,10 @@ conda activate blast
 
 
 **4. 統計每個樣本中的微生物數量**
-先安裝pandas套件供後續分析
+先安裝pandas套件供後續分析  
 `pip install pandas`
 
-修改result_to_table.py中的路徑並執行，統計每個樣本中各序列比對到的微生物數量
+修改result_to_table.py中的路徑並執行，統計每個樣本中各序列比對到的微生物數量  
 
 `python result_to_table.py`
 
@@ -152,8 +152,8 @@ conda activate blast
 
 
 **5. 將所有樣本之統計結果彙整成單一個檔案**
-修改toAsvtable.py中的路徑並執行，統計每個微生物在各樣本中的數量，並按數量排序(高到低)
-最後統整成一個csv檔案
+修改toAsvtable.py中的路徑並執行，統計每個微生物在各樣本中的數量，並按數量排序(高到低)  
+最後統整成一個csv檔案  
 
 `python toAsvtable.py`
 
@@ -162,9 +162,9 @@ conda activate blast
 
 **6. 選擇top 10 abundance之資料進行繪圖**
 
-修改to_plot.py中的路徑並執行，輸出to_plot.csv
+修改to_plot.py中的路徑並執行，輸出to_plot.csv  
 
-於本機端使用R ggplot2進行繪圖
+於本機端使用R ggplot2進行繪圖  
 ```
 data <- read.csv("to_plot.csv", header=T)
 
