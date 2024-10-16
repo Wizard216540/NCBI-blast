@@ -120,7 +120,7 @@ conda activate blast
 ![messageImage_1728958994412](https://hackmd.io/_uploads/r1nLG8iJ1l.jpg)
 
 
-**3. 使用NCBI 16S_rRNA 資料庫進行序列之比對**
+**3. 使用NCBI 16S_rRNA 資料庫進行序列之比對**  
 修改pigmicrobiota_blast.py中的路徑後執行，與先前下載好的16S_rRNA資料庫進行比對  
 一個樣本比對約需50分鐘，建議使用nohup  
 最後會輸出比對結果之txt檔案  
@@ -140,9 +140,9 @@ conda activate blast
 ![圖片1](https://hackmd.io/_uploads/BkxXkwsJkx.png)
 
 
-**4. 統計每個樣本中的微生物數量**
+**4. 統計每個樣本中的微生物數量**  
 先安裝pandas套件供後續分析  
-`pip install pandas`
+`pip install pandas`  
 
 修改result_to_table.py中的路徑並執行，統計每個樣本中各序列比對到的微生物數量  
 
@@ -151,7 +151,7 @@ conda activate blast
 ![messageImage_1728968010410](https://hackmd.io/_uploads/SyXDSuikJx.jpg)
 
 
-**5. 將所有樣本之統計結果彙整成單一個檔案**
+**5. 將所有樣本之統計結果彙整成單一個檔案**  
 修改toAsvtable.py中的路徑並執行，統計每個微生物在各樣本中的數量，並按數量排序(高到低)  
 最後統整成一個csv檔案  
 
