@@ -1,4 +1,4 @@
-# NCBI Blast安裝前置: Miniconda安裝
+# NCBI Blast
 先安裝conda環境
 
 官網: https://docs.conda.io/en/latest/miniconda.html
